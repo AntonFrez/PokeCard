@@ -1,0 +1,132 @@
+/* .pokeCard__front {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1em 1em 2em rgba(0,0,0,.2);
+    border: #000 2px solid;
+    border-radius: 20px;
+    backface-visibility: hidden;
+} */
+
+/* .mainInfoBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+} */
+
+
+/* .pokeImage {
+    margin: 10px;
+    max-width: 230px;
+}
+
+.pokeName {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    text-shadow: 1px 0 1px #000, 
+                0 1px 1px #000, 
+                -1px 0 1px #000, 
+                0 -1px 1px #000;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin: 10px;
+} */
+
+
+-----------------------
+
+.pokeCard {
+   /*  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pokeCard__front,
+.pokeCard__back {
+    width: 300px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    transition: transform .6s linear;
+    cursor: pointer;
+    
+}
+
+.pokeCard__front img {
+    object-fit: cover;
+    margin: 10px;
+/*     height: 100%;
+    width: 100%; */
+}
+
+.pokeCard__front {
+    transform: perspective(600px) rotateY(0deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    backface-visibility: hidden;
+   /*  margin-top: 70px; */
+/*     box-shadow: 1em 1em 2em rgba(0,0,0,.2);
+    border: #000 2px solid;
+    border-radius: 20px; */
+}
+
+.pokeCard__back {
+/*     background: #f1f1f1; */
+    backface-visibility: hidden;
+    transform: perspective(600px) rotateY(90deg);
+}
+
+.pokeCard__back.active {
+    transform: perspective(600px) rotateY(360deg);
+    backface-visibility: hidden;
+
+}
+
+#root > div > div > div.card.back > div.pokemonRenderCard > div > div{
+    display: none;
+}
+
+------
+
+/* .pokeCard__front {
+    transform: perspective(600px) rotateY(-180deg);
+} */
+
+/* .pokeCard__back {
+    transform: rotateY(180deg);
+}        */     
+
+
+ --------
+
+
+
+
+li {
+    list-style: none;
+    color: white;
+    text-shadow: 1px 0 1px #000, 
+                0 1px 1px #000, 
+                -1px 0 1px #000, 
+                0 -1px 1px #000;
+}
+
+p {
+    font-size: 12px;
+    padding: 0 15px 0 15px;
+    color: white;
+    text-shadow: 1px 0 1px #000, 
+                0 1px 1px #000, 
+                -1px 0 1px #000, 
+                0 -1px 1px #000;
+    text-transform: capitalize;
+}

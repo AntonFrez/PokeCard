@@ -1,0 +1,23 @@
+html{
+    background-color: #e5aa32;
+    font-family: 'Carter One', cursive;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.header__image {
+    width: 60%;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: #ea4e25;
+    text-shadow: 1px 0 1px #000, 
+                0 1px 1px #000, 
+                -1px 0 1px #000, 
+                0 -1px 1px #000;
+}
