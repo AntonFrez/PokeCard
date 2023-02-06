@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/PokeCard/static/css/main.20792a43.css",
+    "main.js": "/PokeCard/static/js/main.4d4c6cbc.js",
+    "static/media/background_card2.jpg": "/PokeCard/static/media/background_card2.b40285cd325b6bc05996.jpg",
+    "index.html": "/PokeCard/index.html",
+    "main.20792a43.css.map": "/PokeCard/static/css/main.20792a43.css.map",
+    "main.4d4c6cbc.js.map": "/PokeCard/static/js/main.4d4c6cbc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.20792a43.css",
+    "static/js/main.4d4c6cbc.js"
+  ]
+}
