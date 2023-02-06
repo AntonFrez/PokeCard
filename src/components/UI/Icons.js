@@ -1,5 +1,5 @@
 /* import { createElement } from 'react' */
-import BugType from '../Types/BugType.png'
+/* import BugType from '../Types/BugType.png'
 import DarkType from '../Types/DarkType.png'
 import DragonType from '../Types/DragonType.png'
 import ElectricType from '../Types/ElectricType.png'
@@ -16,9 +16,9 @@ import PoisonType from '../Types/PoisonType.png'
 import PsychicType from '../Types/PsychicType.png'
 import RockType from '../Types/RockType.png'
 import SteelType from '../Types/SteelType.png'
-import WaterType from '../Types/WaterType.png'
+import WaterType from '../Types/WaterType.png' */
 
-const icons = {
+/* const icons = {
     bug: BugType,
     dark: DarkType,
     dragon: DragonType,
@@ -37,15 +37,15 @@ const icons = {
     rock: RockType,
     steel: SteelType,
     water: WaterType,
-}
+} */
 
 const typeIco = (props) => {
     
-    const searchAlt = document && document.querySelector('.typePokemonImg').alt
+   /*  const searchAlt = document && document.querySelector('.typePokemonImg').alt
     console.log(searchAlt, 1);
     const searchIcon = Object.entries(icons).filter(icon => icon[0] === searchAlt);
     const imgg = document.querySelector(".typePokemonImg").src = searchIcon[0][1]  
-    console.log('iconsss');
+    console.log('iconsss'); */
 }
 
 const TypeIcons = (props) => {

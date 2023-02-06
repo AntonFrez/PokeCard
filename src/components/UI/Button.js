@@ -1,26 +1,25 @@
 import React, { useState } from 'react'
 import './Button.css'
 import Card from './Card'
-import TypeIcons from './Icons'
 
-import BugType from '../Types/BugType.png'
-import DarkType from '../Types/DarkType.png'
-import DragonType from '../Types/DragonType.png'
-import ElectricType from '../Types/ElectricType.png'
-import FairyType from '../Types/FairyType.png'
-import FightingType from '../Types/FightingType.png'
-import FireType from '../Types/FireType.png'
-import FlyingType from '../Types/FlyingType.png'
-import GhostType from '../Types/GhostType.png'
-import GrassType from '../Types/GrassType.png'
-import GroundType from '../Types/GroundType.png'
-import IceType from '../Types/IceType.png'
-import NormalType from '../Types/NormalType.png'
-import PoisonType from '../Types/PoisonType.png'
-import PsychicType from '../Types/PsychicType.png'
-import RockType from '../Types/RockType.png'
-import SteelType from '../Types/SteelType.png'
-import WaterType from '../Types/WaterType.png'
+import BugType from '../image/BugType.png'
+import DarkType from '../image/DarkType.png'
+import DragonType from '../image/DragonType.png'
+import ElectricType from '../image/ElectricType.png'
+import FairyType from '../image/FairyType.png'
+import FightingType from '../image/FightingType.png'
+import FireType from '../image/FireType.png'
+import FlyingType from '../image/FlyingType.png'
+import GhostType from '../image/GhostType.png'
+import GrassType from '../image/GrassType.png'
+import GroundType from '../image/GroundType.png'
+import IceType from '../image/IceType.png'
+import NormalType from '../image/NormalType.png'
+import PoisonType from '../image/PoisonType.png'
+import PsychicType from '../image/PsychicType.png'
+import RockType from '../image/RockType.png'
+import SteelType from '../image/SteelType.png'
+import WaterType from '../image/WaterType.png'
 
 const icons = {
   bug: BugType,
@@ -45,7 +44,6 @@ const icons = {
 
 const Button = (props) => {
   
-
   const [namePokemon, setData] = useState()
   const [imagePokemon, setImagePokemon] = useState()
   const [idPokemon, setIdPokemon] = useState()
@@ -62,7 +60,6 @@ const Button = (props) => {
   const baseImgUrl =
   "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/";
 
-
   const ClickButtonHandler = (props) => {
 
     const randomСharacterId = Math.floor(Math.random() * 895);
@@ -70,7 +67,6 @@ const Button = (props) => {
     fetch((baseImgUrl, baseUrl) + randomСharacterId)
     .then((response) => response.json())
     .then((data) => {
-      /* console.log(data, 'data'); */
       setIdPokemon(data.id)
       setData(data.name)
       setImagePokemon(data.sprites.other["official-artwork"].front_default)
@@ -84,12 +80,9 @@ const Button = (props) => {
       setType(data.types[0].type.name)
 
       let altDataName = data.types[0].type.name
-      /* console.log(altDataName, 'altDataNme') */
-
       const searchIcon = Object && Object.entries(icons).filter(icon => icon[0] === altDataName);
-      /* console.log(searchIcon, 'object filter'); */
       const imgg = document.querySelector(".typePokemonImg").src = searchIcon[0][1]  
-      /* console.log(imgg, 'src'); */
+
     })
    
   }
