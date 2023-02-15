@@ -62,7 +62,7 @@ const Button = (props) => {
 
   const ClickButtonHandler = (props) => {
 
-    const randomСharacterId = Math.floor(Math.random() * 895);
+    const randomСharacterId = Math.floor(Math.random() * 1008);
     
     fetch((baseImgUrl, baseUrl) + randomСharacterId)
     .then((response) => response.json())
@@ -81,7 +81,7 @@ const Button = (props) => {
 
       let altDataName = data.types[0].type.name
       const searchIcon = Object && Object.entries(icons).filter(icon => icon[0] === altDataName);
-      const imgg = document.querySelector(".typePokemonImg").src = searchIcon[0][1]  
+      document.querySelector(".typePokemonImg").src = searchIcon[0][1]  
 
     })
    
@@ -100,6 +100,7 @@ const Button = (props) => {
       speed={speed}
       type={type}/>
       <button className="pokemonRenderButton" onClick={ClickButtonHandler}>Find Out!</button>
+      <span className='pokeballBtn'></span>
     </div>
 }
 
