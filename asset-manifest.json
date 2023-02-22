@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/PokeCard/static/css/main.fe2a4ad5.css",
+    "main.css": "/PokeCard/static/css/main.0bb43b35.css",
     "main.js": "/PokeCard/static/js/main.5c49285f.js",
+    "static/media/background-texture.png": "/PokeCard/static/media/background-texture.7ca3527cd09c73fcfe6b.png",
     "static/media/pokeball2.png": "/PokeCard/static/media/pokeball2.41be4af5973ea6b9c4e1.png",
+    "static/media/banner.jpg": "/PokeCard/static/media/banner.765478832576c1ec59ac.jpg",
     "static/media/background-card.jpg": "/PokeCard/static/media/background-card.a7d89b3155921da3ec2a.jpg",
     "static/media/background_card2.jpg": "/PokeCard/static/media/background_card2.b40285cd325b6bc05996.jpg",
     "index.html": "/PokeCard/index.html",
-    "main.fe2a4ad5.css.map": "/PokeCard/static/css/main.fe2a4ad5.css.map",
+    "main.0bb43b35.css.map": "/PokeCard/static/css/main.0bb43b35.css.map",
     "main.5c49285f.js.map": "/PokeCard/static/js/main.5c49285f.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe2a4ad5.css",
+    "static/css/main.0bb43b35.css",
     "static/js/main.5c49285f.js"
   ]
 }
